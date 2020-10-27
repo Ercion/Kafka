@@ -10,3 +10,9 @@ bin/kafka-topics.sh --create --bootstrap-server localhost:9092 \
 
 # List Topics
 bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+
+# Consume Topic 
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic your_topic_name
+
+# Produce to Topic
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic your_topic_name
